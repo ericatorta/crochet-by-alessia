@@ -1,0 +1,679 @@
+{
+  "hero": {
+    "eyebrow": "Creazioni a uncinetto",
+    "titolo": "Fatto a mano,",
+    "corsivo": "con amore.",
+    "testo": "Piccole creazioni fatte a mano, un punto alla volta. Scegli tra le mie borse o chiedimi qualcosa fatto apposta per te.",
+    "foto": "foto/logo.jpg"
+  },
+  "lavori": {
+    "titolo": "Ogni pezzo è unico",
+    "testo": "Borse, clutch, accessori e oggetti per la casa. Clicca su una categoria per vedere tutti i lavori: sono esempi, li rifaccio per te nei colori che preferisci e molti li trovi ai mercatini.",
+    "lista": [
+      {
+        "cat": "borse-mano",
+        "nome": "Conchiglia",
+        "testo": "La forma a ventaglio, con manico in bambù o catena.",
+        "foto": [
+          {
+            "src": "foto/modelli/conchiglia-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/conchiglia-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/conchiglia-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/conchiglia-4.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-mano",
+        "nome": "Borsetta panna",
+        "testo": "Da mano, con catena dorata.",
+        "foto": [
+          {
+            "src": "foto/modelli/borsetta-panna-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-panna-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-mano",
+        "nome": "Borsetta morbida",
+        "testo": "Piccola e morbida, da mano.",
+        "foto": [
+          {
+            "src": "foto/modelli/borsetta-morbida-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-mano",
+        "nome": "Bon ton",
+        "testo": "Beige e nero, con catena dorata.",
+        "foto": [
+          {
+            "src": "foto/modelli/bon-ton-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/bon-ton-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "bauletti",
+        "nome": "Bauletto",
+        "testo": "Rigido e capiente, con manici e chiusura. In tanti colori.",
+        "foto": [
+          {
+            "src": "foto/modelli/borsetta-con-manici-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-4.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-5.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-6.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-7.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/borsetta-con-manici-8.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Con frange",
+        "testo": "A spalla, con frange e spille.",
+        "foto": [
+          {
+            "src": "foto/modelli/con-frange-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/con-frange-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/con-frange-3.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Traforata",
+        "testo": "Leggera, a spalla, con il punto a rete.",
+        "foto": [
+          {
+            "src": "foto/modelli/traforata-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/traforata-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/traforata-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/traforata-4.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/traforata-5.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Con chiusura gioiello",
+        "testo": "Con chiusura gioiello e catena.",
+        "foto": [
+          {
+            "src": "foto/modelli/con-chiusura-gioiello-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/con-chiusura-gioiello-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Con catena",
+        "testo": "Con la tracolla a catena.",
+        "foto": [
+          {
+            "src": "foto/modelli/con-catena-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/con-catena-3.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Shopper",
+        "testo": "Capienti, per tutti i giorni o per il mare.",
+        "foto": [
+          {
+            "src": "foto/modelli/shopper-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-4.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-5.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-6.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-7.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-8.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/shopper-9.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borse-spalla",
+        "nome": "Sacchetto",
+        "testo": "Con coulisse e fiocco.",
+        "foto": [
+          {
+            "src": "foto/modelli/sacchetto-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/sacchetto-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "zainetti",
+        "nome": "Zainetto",
+        "testo": "Con chiusura in metallo.",
+        "foto": [
+          {
+            "src": "foto/modelli/zainetto-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/zainetto-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "clutch",
+        "nome": "Clutch",
+        "testo": "Con chiusura a molla, in tanti filati e colori, con spille e charm a scelta.",
+        "foto": [
+          {
+            "src": "foto/modelli/bauletto-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/bauletto-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/bauletto-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-4.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-5.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-6.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-7.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-8.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-9.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/clutch-10.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/bauletto-5.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "accessori",
+        "nome": "Scrunchie",
+        "testo": "Elastici morbidi in tanti colori.",
+        "foto": [
+          {
+            "src": "foto/modelli/scrunchie-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/scrunchie-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/scrunchie-3.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "accessori",
+        "nome": "Fiocchi",
+        "testo": "Da mettere su borse e capelli.",
+        "foto": [
+          {
+            "src": "foto/modelli/fiocchi-1.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "accessori",
+        "nome": "Portaocchiali",
+        "testo": "A forma di gatto e orsetto.",
+        "foto": [
+          {
+            "src": "foto/modelli/portaocchiali-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/portaocchiali-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/portaocchiali-3.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "borraccia",
+        "nome": "Porta borraccia",
+        "testo": "Con tracolla.",
+        "foto": [
+          {
+            "src": "foto/modelli/porta-borraccia-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/porta-borraccia-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "casa",
+        "nome": "Sottobicchieri",
+        "testo": "Tondi, con il gattino.",
+        "foto": [
+          {
+            "src": "foto/modelli/sottobicchieri-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/sottobicchieri-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "casa",
+        "nome": "Runner",
+        "testo": "Centrotavola con nappine.",
+        "foto": [
+          {
+            "src": "foto/modelli/runner-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/runner-2.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "cesti",
+        "nome": "Cestini a cuore",
+        "testo": "Per la casa o un regalo.",
+        "foto": [
+          {
+            "src": "foto/modelli/cestini-a-cuore-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-a-cuore-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-a-cuore-3.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-a-cuore-4.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-a-cuore-5.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-a-cuore-6.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "cesti",
+        "nome": "Cestini",
+        "testo": "Per mettere in ordine con stile.",
+        "foto": [
+          {
+            "src": "foto/modelli/cestini-1.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-2.jpg",
+            "nota": ""
+          },
+          {
+            "src": "foto/modelli/cestini-3.jpg",
+            "nota": ""
+          }
+        ]
+      },
+      {
+        "cat": "bomboniere",
+        "nome": "Bomboniere",
+        "testo": "Cuoricini per le tue feste.",
+        "foto": [
+          {
+            "src": "foto/modelli/bomboniere-1.jpg",
+            "nota": ""
+          }
+        ]
+      }
+    ],
+    "categorie": [
+      {
+        "id": "borse-mano",
+        "nome": "Borse a mano",
+        "riquadro": "borse"
+      },
+      {
+        "id": "bauletti",
+        "nome": "Bauletti",
+        "riquadro": "borse"
+      },
+      {
+        "id": "borse-spalla",
+        "nome": "Borse a spalla",
+        "riquadro": "borse"
+      },
+      {
+        "id": "zainetti",
+        "nome": "Zainetti",
+        "riquadro": "borse"
+      },
+      {
+        "id": "clutch",
+        "nome": "Clutch",
+        "riquadro": "borse"
+      },
+      {
+        "id": "accessori",
+        "nome": "Accessori",
+        "riquadro": "accessori"
+      },
+      {
+        "id": "borraccia",
+        "nome": "Porta borraccia",
+        "riquadro": "accessori"
+      },
+      {
+        "id": "casa",
+        "nome": "Per la casa",
+        "riquadro": "casa"
+      },
+      {
+        "id": "cesti",
+        "nome": "Cesti",
+        "riquadro": "casa"
+      },
+      {
+        "id": "bomboniere",
+        "nome": "Bomboniere",
+        "riquadro": "misura"
+      }
+    ],
+    "riquadri": [
+      {
+        "id": "borse",
+        "nome": "Borse",
+        "sotto": "A mano, a spalla, bauletti, zainetti e clutch",
+        "copertina": "Bauletto",
+        "richiesta": ""
+      },
+      {
+        "id": "accessori",
+        "nome": "Accessori",
+        "sotto": "Piccoli pezzi e porta borraccia",
+        "copertina": "Portaocchiali",
+        "richiesta": ""
+      },
+      {
+        "id": "casa",
+        "nome": "Per la casa",
+        "sotto": "Cesti e oggetti per la casa",
+        "copertina": "Cestini a cuore",
+        "richiesta": ""
+      },
+      {
+        "id": "misura",
+        "nome": "Su misura",
+        "sotto": "Bomboniere e regali su richiesta",
+        "copertina": "",
+        "richiesta": "Bomboniere, regali e pezzi su misura: dimmi cosa ti serve, colori e quantità, e lo creo per te."
+      }
+    ]
+  },
+  "richiesta": {
+    "titolo": "Lo creo apposta per te",
+    "passi": [
+      {
+        "titolo": "Scrivimi",
+        "testo": "Su WhatsApp o Instagram, raccontami cosa ti piacerebbe."
+      },
+      {
+        "titolo": "Scegliamo insieme",
+        "testo": "Colori, filato e misure: decidiamo ogni dettaglio."
+      },
+      {
+        "titolo": "Lo preparo a mano",
+        "testo": "In circa due settimane, il tempo di prendere il materiale e lavorarlo, è pronto: te lo consegno o te lo spedisco."
+      }
+    ]
+  },
+  "chi": {
+    "titolo": "Benvenuti nel mio mondo creativo! 🧶",
+    "testo": "Ciao! Sono Alessia e dietro ogni creazione c'è la mia passione per l'uncinetto e per tutto ciò che nasce dalla fantasia e dalla manualità.\n\nCrochet by Alessia è il mio piccolo spazio creativo, dove ogni filo prende forma e si trasforma in qualcosa di unico, realizzato interamente a mano con cura, amore e attenzione ai dettagli.\n\nBorse, accessori e piccoli oggetti pensati per aggiungere un tocco di originalità alla quotidianità.\n\nPerché ogni creazione handmade è speciale: nessuna è esattamente uguale all'altra, proprio come chi la sceglie.",
+    "firma": "Fatto a mano, con passione e un pizzico di creatività! 💕",
+    "foto": "foto/logo.jpg"
+  },
+  "eventi": {
+    "titolo": "Prossimi mercatini",
+    "vuoto": "Le prossime date le annuncio su Instagram: seguimi per non perderle!",
+    "lista": [
+      {
+        "data": "2026-11-08",
+        "fine": "",
+        "nome": "Fiera Autunnale di Volpiano (20ª edizione)",
+        "luogo": "Vie del centro storico, Volpiano (TO)",
+        "orari": "",
+        "link": "https://www.instagram.com/prolocodivolpiano/"
+      }
+    ]
+  },
+  "mercatini": {
+    "titolo": "Vieni a toccarle con mano",
+    "testo": "Le mie creazioni sono fatte per essere viste da vicino: ecco come averle.",
+    "foto": [
+      {
+        "src": "foto/mercatini/banco-lago.jpg",
+        "nota": "Alessia al suo banco in riva al lago"
+      },
+      {
+        "src": "foto/mercatini/banco-1.jpg",
+        "nota": "Il banco di crochet by Alessia a un mercatino"
+      },
+      {
+        "src": "foto/mercatini/rosa-gazebo.jpg",
+        "nota": "Borsa rosa appesa al gazebo del mercatino"
+      },
+      {
+        "src": "foto/mercatini/banco-torre.jpg",
+        "nota": "Alessia al suo banco sotto il gazebo, davanti alla torre"
+      },
+      {
+        "src": "foto/mercatini/banco-2.jpg",
+        "nota": "Borse e accessori sul banco del mercatino"
+      },
+      {
+        "src": "foto/mercatini/righe-gazebo.jpg",
+        "nota": "Borsa a righe al mercatino"
+      }
+    ],
+    "ai_mercatini": "Partecipo ai mercatini a Torino e provincia: passa a trovarmi, guarda e tocca i miei lavori.",
+    "a_mano": "Se sei in zona ci organizziamo e te la porto io.",
+    "spedizione": "Sei lontano? Te la spedisco a casa, ben impacchettata. Il costo lo valutiamo insieme in base a dove abiti."
+  },
+  "contatti": {
+    "whatsapp": "+39 393 525 9533",
+    "instagram": "https://www.instagram.com/crochet_by_alessia_/",
+    "tiktok": "https://www.tiktok.com/@crochet.by.alessia",
+    "titolo": "Ti piace qualcosa?",
+    "testo": "Scrivimi, ti rispondo il prima possibile."
+  },
+  "recensioni": {
+    "titolo": "Dicono di me",
+    "lista": [
+      {
+        "testo": "No vabbè, ma è stupenda! Sapevo che non mi avresti delusa, tu non deludi mai! È proprio come la desideravo, e poi è dolcissima. Si vede proprio che ci metti passione e amore 💜",
+        "nome": "",
+        "pezzo": "Borsa lilla su richiesta"
+      },
+      {
+        "testo": "Ho aperto la busta e visto la borsa: bellissima, venuta davvero bene! Sono strasoddisfatto, grazie mille 🫶",
+        "nome": "",
+        "pezzo": "Borsa"
+      },
+      {
+        "testo": "Sì, è stata un successo! Complimenti anche da parte di mia mamma. Ancora grazie mille 💕",
+        "nome": "",
+        "pezzo": "Borsa regalo"
+      },
+      {
+        "testo": "A mia sorella è piaciuto tanto lo zaino. Ti ringrazia 😊",
+        "nome": "",
+        "pezzo": "Zainetto"
+      },
+      {
+        "testo": "Bellissimo… Grazie! 😘",
+        "nome": "",
+        "pezzo": "Cestino"
+      },
+      {
+        "testo": "A mia mamma è piaciuta tantissimo 😊",
+        "nome": "",
+        "pezzo": "Regalo"
+      }
+    ]
+  }
+}

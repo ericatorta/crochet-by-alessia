@@ -1,0 +1,12 @@
+// Pubblicazione del sito vero (crochetbyalessia.com): npx wrangler deploy
+{
+  "name": "crochet-by-alessia",
+  "main": "worker.js",
+  "compatibility_date": "2026-11-03",
+  "account_id": "YOUR_ACCOUNT_ID",
+  // la pagina, le api e le foto caricate passano dal motore; tutto il resto sono file statici
+  "assets": { "directory": "sito", "binding": "ASSETS", "run_worker_first": ["/", "/api/*", "/media/*"] },
+  // contenuti e foto salvati dall'admin
+  "kv_namespaces": [{ "binding": "CONTENUTI", "id": "YOUR_KV_ID" }]
+  // ADMIN_PASSWORD e SESSION_SECRET sono secret: npx wrangler secret put …
+}

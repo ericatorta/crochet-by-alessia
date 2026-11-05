@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Crochet by Alessia · Creazioni a uncinetto fatte a mano</title>
+<meta name="description" content="Creazioni a uncinetto fatte a mano con amore da Alessia. Pezzi unici e su richiesta: scrivimi su WhatsApp o Instagram.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://crochetbyalessia.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://crochetbyalessia.com/">
+<meta property="og:title" content="Crochet by Alessia · Creazioni a uncinetto fatte a mano">
+<meta property="og:description" content="Creazioni a uncinetto fatte a mano con amore da Alessia. Pezzi unici e su richiesta: scrivimi su WhatsApp o Instagram.">
+<meta property="og:image" content="https://crochetbyalessia.com/foto/logo.jpg">
+<style>
+@font-face{font-family:"Cormorant";src:url(fonts/cormorant.woff2) format("woff2");font-weight:400 700;font-display:swap}
+@font-face{font-family:"Cormorant";src:url(fonts/cormorant-italic.woff2) format("woff2");font-style:italic;font-weight:400 700;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost.woff2) format("woff2");font-weight:300 700;font-display:swap}
+:root{
+  --rosa:#e4868c; --rosa-chiaro:#f6d9d6; --crema:#fdf6f1;
+  --bordeaux:#7a1f2b; --prugna:#8a5a8f; --testo:#3b2226; --muto:#7d5f62;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--crema);color:var(--testo);font:400 17px/1.6 "Jost",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* barra */
+header{position:sticky;top:0;z-index:5;background:rgba(253,246,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--rosa-chiaro)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marchio{font:italic 600 1.6rem/1 "Cormorant",serif;color:var(--bordeaux);text-decoration:none}
+nav a{margin-left:22px;text-decoration:none;font-size:.95rem;color:var(--muto)}
+nav a:hover{color:var(--bordeaux)}
+
+/* apertura */
+.hero{background:var(--rosa);color:#fff;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;padding-top:64px;padding-bottom:64px}
+.hero small{letter-spacing:.18em;text-transform:uppercase;font-size:.8rem;opacity:.9}
+.hero h1{font:600 clamp(2.6rem,6vw,4.4rem)/1.02 "Cormorant",serif;margin:14px 0 18px;color:#fff}
+.hero h1 em{font-style:italic;color:var(--bordeaux)}
+.hero p{font-size:1.1rem;max-width:30ch;opacity:.95}
+.hero figure{border-radius:28px;overflow:hidden;border:8px solid rgba(255,255,255,.35);box-shadow:0 20px 50px rgba(122,31,43,.25)}
+.hero figure img{width:100%;height:100%;object-fit:cover}
+.bottoni{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:500;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn-wa{background:var(--bordeaux);color:#fff}
+.btn-ig{background:#fff;color:var(--bordeaux)}
+
+/* sezioni */
+section{padding:84px 0}
+.titolo{text-align:center;margin-bottom:44px}
+.titolo small{letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--prugna)}
+.titolo h2{font:600 clamp(2rem,4vw,2.8rem)/1.1 "Cormorant",serif;color:var(--bordeaux);margin-top:8px}
+.titolo p{color:var(--muto);max-width:52ch;margin:12px auto 0}
+
+.lavori{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.lavoro{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(122,31,43,.07)}
+.lavoro img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.lavoro div:last-child{padding:14px 16px}
+.lavoro h3{font:600 1.3rem "Cormorant",serif;color:var(--bordeaux)}
+.lavoro p{font-size:.92rem;color:var(--muto)}
+
+.come{background:#fff}
+.passi{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
+.passo{text-align:center;padding:0 10px}
+.passo::before{counter-increment:p;content:counter(p);display:grid;place-items:center;width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--rosa-chiaro);color:var(--bordeaux);font:600 1.5rem "Cormorant",serif}
+.passo h3{font:600 1.35rem "Cormorant",serif;color:var(--bordeaux);margin-bottom:6px}
+.passo p{color:var(--muto);font-size:.95rem}
+
+.chi .wrap{display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:center}
+.chi figure{border-radius:24px;overflow:hidden;background:var(--rosa)}
+.chi h2{font:600 clamp(2rem,4vw,2.6rem)/1.1 "Cormorant",serif;color:var(--bordeaux);margin:8px 0 16px}
+.chi small{letter-spacing:.18em;text-transform:uppercase;font-size:.78rem;color:var(--prugna)}
+.chi p+p{margin-top:12px}
+.firma{font:italic 500 1.6rem "Cormorant",serif;color:var(--bordeaux);margin-top:18px}
+
+.contatti{background:var(--rosa);color:#fff;text-align:center}
+.contatti h2{font:600 clamp(2rem,4vw,2.8rem)/1.1 "Cormorant",serif;margin-bottom:10px}
+.contatti .bottoni{justify-content:center}
+.canali{display:flex;justify-content:center;flex-wrap:wrap;gap:22px;margin-top:26px;font-size:.95rem}
+.canali a{text-decoration:none;opacity:.95}
+.canali a:hover{text-decoration:underline}
+
+footer{background:var(--bordeaux);color:#f6d9d6;text-align:center;padding:26px 20px;font-size:.88rem}
+footer .motto{font:italic 500 1.25rem "Cormorant",serif;color:#fff;margin-bottom:4px}
+footer .crediti{margin-top:12px;font-size:.8rem;opacity:.85}
+footer .crediti a{color:#fff}
+html{scroll-padding-top:76px}
+
+/* tocchi allegri: giallo girasole e lilla accanto al rosa */
+:root{--giallo:#f6c453;--giallo-chiaro:#fdf0cf;--lilla:#b48cc8;--lilla-chiaro:#efe3f5}
+.hero{position:relative;background:radial-gradient(circle at 12% 18%,rgba(255,255,255,.18) 0 70px,transparent 71px),radial-gradient(circle at 92% 85%,rgba(246,196,83,.35) 0 90px,transparent 91px),var(--rosa)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:40px;background:var(--crema);-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M0 20 Q15 0 30 20 T60 20 T90 20 T120 20 V40 H0Z'/%3E%3C/svg%3E") 0 0/120px 40px repeat-x;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 40' preserveAspectRatio='none'%3E%3Cpath d='M0 20 Q15 0 30 20 T60 20 T90 20 T120 20 V40 H0Z'/%3E%3C/svg%3E") 0 0/120px 40px repeat-x}
+.hero small{display:inline-block;background:var(--giallo);color:var(--bordeaux);padding:5px 12px;border-radius:999px;opacity:1;font-weight:500}
+.titolo small::before,.titolo small::after{content:"♥";color:var(--rosa);margin:0 8px;font-size:.9em}
+.lavoro{transition:transform .2s}
+.lavoro:hover{transform:translateY(-4px) rotate(-.6deg)}
+.lavoro:nth-child(3n+2) h3{color:var(--prugna)}
+.passo:nth-child(2)::before{background:var(--giallo-chiaro)}
+.passo:nth-child(3)::before{background:var(--lilla-chiaro);color:var(--prugna)}
+.chi figure{transform:rotate(-2deg);box-shadow:10px 10px 0 var(--giallo)}
+.chi strong{color:var(--bordeaux)}
+
+.mercatini{background:#fff}
+.modi{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.modo{border-radius:22px;padding:26px 22px}
+.modo span{font-size:2rem;display:block;margin-bottom:8px}
+.modo h3{font:600 1.45rem "Cormorant",serif;color:var(--bordeaux);margin-bottom:6px}
+.modo p{color:var(--testo);font-size:.95rem}
+.m-giallo{background:var(--giallo-chiaro)}
+.m-rosa{background:var(--rosa-chiaro)}
+.m-lilla{background:var(--lilla-chiaro)}
+
+.lavoro{cursor:pointer}
+.lavoro:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+.cop{position:relative}
+.conta{position:absolute;right:10px;bottom:10px;background:rgba(255,255,255,.92);color:var(--bordeaux);font-size:.78rem;font-weight:600;padding:4px 10px;border-radius:999px}
+
+/* galleria del modello */
+#galleria{border:0;padding:0;margin:auto;width:min(960px,100vw);max-width:100vw;max-height:100dvh;background:var(--crema);border-radius:24px;overflow:auto}
+#galleria::backdrop{background:rgba(59,34,38,.75)}
+#galleria figure{position:relative;background:#2b1a1d;display:grid;place-items:center}
+#galleria figure img{max-width:100%;max-height:70dvh;object-fit:contain}
+/* foto aperta: la finestra è alta quasi quanto lo schermo e la foto prende tutto lo spazio che resta dopo nome, miniature e pulsante */
+#galleria[open]:not(.scelta){display:flex;flex-direction:column;width:min(1100px,96vw);height:94dvh}
+#galleria:not(.scelta)>*{flex:none}
+#galleria:not(.scelta) figure{flex:1 1 0;min-height:0}
+#galleria:not(.scelta) figure img{position:absolute;inset:0;width:100%;height:100%;max-height:none}
+#galleria:not(.scelta) .g-testo{padding:10px 20px 0}
+#galleria:not(.scelta) .g-miniature img{width:52px;height:64px}
+#galleria:not(.scelta) .g-chiedi{margin:6px auto 14px}
+/* schermi bassi: niente miniature, si sfoglia con le frecce e la foto resta grande */
+@media (max-height:560px){#galleria:not(.scelta) .g-miniature{display:none}}
+.g-chiudi{position:absolute;top:10px;right:10px;z-index:2;width:42px;height:42px;border-radius:50%;border:0;background:#fff;color:var(--bordeaux);font-size:1.1rem;cursor:pointer}
+.g-freccia{position:absolute;top:50%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:var(--bordeaux);font-size:1.8rem;line-height:1;cursor:pointer}
+.g-prima{left:10px}.g-dopo{right:10px}
+.g-testo{padding:16px 20px 4px;text-align:center}
+.g-testo h3{font:600 1.6rem "Cormorant",serif;color:var(--bordeaux)}
+.g-nota{color:var(--muto)}
+.g-conta{font-size:.82rem;color:var(--prugna)}
+.g-miniature{display:flex;gap:8px;overflow-x:auto;padding:10px 20px}
+.g-miniature button{flex:none;border:3px solid transparent;border-radius:12px;padding:0;overflow:hidden;cursor:pointer;background:none}
+.g-miniature button.on{border-color:var(--rosa)}
+.g-miniature img{width:62px;height:76px;object-fit:cover;display:block}
+.g-chiedi{display:flex;width:max-content;margin:6px auto 20px}
+/* scelta del modello dentro una categoria */
+.g-modelli{padding:26px 20px 24px;text-align:center}
+.g-modelli h3{font:600 2rem "Cormorant",serif;color:var(--bordeaux)}
+.g-sotto{color:var(--muto);margin-bottom:18px}
+/* schede sempre al centro: con pochi modelli non restano colonne vuote */
+.g-scelta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;text-align:left}
+.g-scelta button{flex:0 1 calc((100% - 56px)/5);min-width:170px;display:flex;flex-direction:column;justify-content:flex-start}
+.g-scelta b{min-height:2.6em;display:flex!important;align-items:center;justify-content:center;text-align:center}
+.g-scelta small{text-align:center}
+.g-scelta button{border:0;padding:0;background:#fff;border-radius:16px;overflow:hidden;cursor:pointer;box-shadow:0 6px 20px rgba(122,31,43,.08);font:inherit}
+.g-scelta img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block}
+.g-scelta b{display:block;padding:10px 12px 0;font:600 1.2rem "Cormorant",serif;color:var(--bordeaux)}
+.g-scelta small{display:block;padding:0 12px 12px;color:var(--muto);font-size:.8rem}
+.g-indietro{position:absolute;top:10px;left:10px;z-index:2;height:42px;padding:0 16px;border-radius:999px;border:0;background:#fff;color:var(--bordeaux);font:500 .9rem "Jost",sans-serif;cursor:pointer}
+#galleria.scelta figure,#galleria.scelta .g-testo,#galleria.scelta .g-miniature,#galleria.scelta .g-chiedi{display:none}
+#galleria.solo-foto .g-chiedi{display:none}
+@media (max-width:600px){.g-scelta{gap:10px}.g-scelta button{flex-basis:calc(50% - 5px);min-width:0}.g-modelli{padding-top:60px}}
+@media (max-width:600px){#galleria{border-radius:0;height:100dvh}#galleria figure img{max-height:60dvh}}
+@media (max-width:600px){#galleria[open]:not(.scelta){width:100vw;height:100dvh}}
+.g-miniature[hidden]{display:none}
+.filtri{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:-16px 0 28px}
+.filtri button{font:500 .92rem "Jost",sans-serif;border:2px solid var(--rosa-chiaro);background:#fff;color:var(--bordeaux);padding:8px 18px;border-radius:999px;cursor:pointer}
+.filtri button.on{background:var(--rosa);border-color:var(--rosa);color:#fff}
+.lavoro.via{display:none}
+/* riquadri categoria: i modelli restano nell'HTML (li gestisce l'admin) ma si vedono raggruppati */
+.lavori{display:none!important}.filtri,.altre{display:none!important}
+.categorie{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.categoria{position:relative;border:0;padding:0;border-radius:22px;overflow:hidden;cursor:pointer;background:#2b1a1d;aspect-ratio:4/5;box-shadow:0 6px 24px rgba(122,31,43,.1);transition:transform .2s;font:inherit;text-align:left}
+.categoria:hover{transform:translateY(-4px) rotate(-.4deg)}
+.categoria:focus-visible{outline:3px solid var(--giallo);outline-offset:3px}
+.categoria img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.categoria:hover img{transform:scale(1.04)}
+.categoria::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 45%,rgba(59,34,38,.78))}
+.categoria span{position:absolute;left:20px;right:20px;bottom:18px;z-index:1;color:#fff}
+.categoria b{display:block;font:600 2rem/1.05 "Cormorant",serif}
+.categoria small{font-size:.88rem;opacity:.9}
+/* 4 riquadri fissi: le 10 categorie dell'admin finiscono dentro come filtri */
+.categorie{grid-template-columns:repeat(4,1fr);gap:24px;width:min(1400px,calc(100vw - 40px));margin-left:50%;translate:-50% 0}
+.categoria{border-radius:26px;aspect-ratio:3/4}
+.categoria span{left:26px;right:26px;bottom:26px}
+.categoria b{font-size:2.9rem}
+.categoria small{font-size:1rem}
+.categoria em{display:block;font-style:normal;font-size:.92rem;opacity:.88;margin-top:4px}
+.g-tipi{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:-6px 0 20px}
+.g-tipi[hidden]{display:none}
+.g-tipi button{font:500 .88rem "Jost",sans-serif;border:2px solid var(--rosa-chiaro);background:#fff;color:var(--bordeaux);padding:7px 16px;border-radius:999px;cursor:pointer}
+.g-tipi button.on{background:var(--rosa);border-color:var(--rosa);color:#fff}
+.g-misura{margin-top:22px;padding:18px;border:2px dashed var(--rosa);border-radius:18px;background:var(--crema)}
+.g-misura p{color:var(--bordeaux);margin-bottom:12px}
+
+@media (max-width:820px){.categorie{grid-template-columns:1fr 1fr;gap:12px}.categoria{aspect-ratio:3/4}.categoria b{font-size:1.45rem}.categoria span{left:12px;right:12px;bottom:12px}.categoria small{font-size:.76rem}.categoria em{display:none}}
+.lavori.chiuse .lavoro:nth-child(n+13){display:none}
+.altre{display:block;margin:26px auto 0;font:500 1rem "Jost",sans-serif;background:var(--bordeaux);color:#fff;border:0;padding:13px 26px;border-radius:999px;cursor:pointer}
+.eventi{background:var(--crema);border:2px dashed var(--rosa);border-radius:24px;padding:22px 24px;margin:0 auto 30px;max-width:720px}
+.eventi>h3{font:600 1.6rem "Cormorant",serif;color:var(--bordeaux);text-align:center;margin-bottom:10px}
+.eventi ul{list-style:none}
+.evento{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--rosa-chiaro)}
+.evento:first-child{border-top:0}
+.giorno{flex:none;width:62px;text-align:center;background:var(--giallo);color:var(--bordeaux);border-radius:14px;padding:6px 0;text-transform:uppercase;font-size:.75rem;font-weight:600;letter-spacing:.06em}
+.giorno b{display:block;font:600 1.7rem/1 "Cormorant",serif}
+.evento h3{font:600 1.3rem "Cormorant",serif;color:var(--bordeaux)}
+.evento p{font-size:.93rem;color:var(--muto)}
+.evento a{font-size:.9rem;color:var(--bordeaux)}
+.nessuno{text-align:center;color:var(--muto)}
+/* foto dei mercatini: una riga che scorre da sola, in loop */
+.foto-merc{overflow-x:auto;scrollbar-width:none;margin:0 calc(50% - 50vw) 22px;cursor:zoom-in;touch-action:pan-x pan-y}
+.foto-merc::-webkit-scrollbar{display:none}
+.foto-merc.trascino{cursor:grabbing}
+.merc-nastro{display:flex;gap:22px;width:max-content;padding:14px 0 18px}
+.foto-merc img{width:340px;flex:none;aspect-ratio:3/4;object-fit:cover;border-radius:18px;transition:transform .3s;-webkit-user-drag:none;user-select:none}
+.foto-merc img:nth-child(odd){transform:rotate(-1.5deg)}.foto-merc img:nth-child(even){transform:rotate(1.5deg)}
+.foto-merc img:hover{transform:rotate(0) scale(1.03)}
+
+/* recensioni: la sezione resta nascosta finché non ce n'è almeno una */
+.recensioni-lista{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;list-style:none;padding:0;margin:0}
+.recensione{position:relative;background:#fff;border-radius:26px;padding:34px 26px 24px;box-shadow:0 6px 24px rgba(122,31,43,.08)}
+.recensione:nth-child(3n+1){background:var(--rosa-chiaro)}.recensione:nth-child(3n+2){background:var(--giallo-chiaro)}.recensione:nth-child(3n){background:var(--lilla-chiaro)}
+.recensione::before{content:"♥";position:absolute;top:-14px;left:26px;width:34px;height:34px;border-radius:50%;background:#fff;color:var(--rosa);display:grid;place-items:center;box-shadow:0 4px 12px rgba(122,31,43,.12)}
+.recensione blockquote{margin:0;font:italic 500 1.3rem/1.4 "Cormorant",serif;color:var(--testo)}
+.recensione p{margin:16px 0 0;font-size:.9rem;color:var(--bordeaux)}
+.recensione p small{display:block;color:var(--muto)}
+@media (max-width:820px){.recensioni-lista{grid-template-columns:1fr}}
+/* lascia una recensione: finisce nell'admin "da approvare" */
+.lascia-apri,#lascia button[type=submit]{font:500 1rem "Jost",sans-serif;cursor:pointer;border:0}
+.lascia-apri{display:flex;width:max-content;margin:30px auto 0;background:#fff;color:var(--bordeaux);border:2px solid var(--rosa)}
+#lascia{margin:auto;max-height:92dvh;overflow:auto;border:0;padding:30px 26px 24px;border-radius:26px;width:min(480px,94vw);background:var(--crema);color:var(--testo)}
+#lascia::backdrop{background:rgba(59,34,38,.75)}
+#lascia h3{font:600 1.9rem "Cormorant",serif;color:var(--bordeaux);text-align:center}
+#lascia>p,#lascia form>p{text-align:center;color:var(--muto);font-size:.92rem;margin:4px 0 16px}
+#lascia label{display:block;font-size:.85rem;color:var(--bordeaux);margin:12px 0 4px}
+#lascia input,#lascia textarea{width:100%;font:inherit;padding:10px 14px;border:2px solid var(--rosa-chiaro);border-radius:14px;background:#fff;color:var(--testo)}
+#lascia textarea{min-height:110px;resize:vertical}
+#lascia input:focus,#lascia textarea:focus{outline:none;border-color:var(--rosa)}
+#lascia .esca{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+#lascia button[type=submit]{display:flex;margin:20px auto 0}
+#lascia .esito{text-align:center;margin-top:12px;color:var(--bordeaux);min-height:1.2em}
+#lascia .g-chiudi{top:12px;right:12px}
+@media (max-width:820px){
+  .merc-nastro{gap:14px}.foto-merc img{width:230px}
+  .modi{grid-template-columns:1fr}
+  header .wrap{flex-direction:column;align-items:stretch;height:auto;padding-top:10px}
+  header .marchio{text-align:center}
+  nav{display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 0 10px;justify-content:center}
+  nav::-webkit-scrollbar{display:none}
+  nav a{margin-left:0;white-space:nowrap;font-size:.86rem}
+  html{scroll-padding-top:104px}
+  .hero .wrap,.chi .wrap{grid-template-columns:1fr}
+  .hero .wrap{text-align:center;padding-top:40px}
+  .hero p{margin:0 auto}
+  .hero .bottoni{justify-content:center}
+  .hero figure{max-width:300px;margin:0 auto;order:-1}
+  .lavori{grid-template-columns:1fr 1fr}
+  .passi{grid-template-columns:1fr}
+  section{padding:60px 0}
+}
+@media (max-width:480px){.lavori{gap:10px}.lavoro div:last-child{padding:10px 12px}.lavoro h3{font-size:1.1rem}.lavoro p{font-size:.82rem}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="marchio" href="#">crochet by Alessia</a>
+    <nav>
+      <a href="#lavori">Creazioni</a>
+      <a href="#come">Su richiesta</a>
+      <a href="#chi">Chi sono</a>
+      <a href="#mercatini">Mercatini</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <small data-c="hero.eyebrow">Creazioni a uncinetto</small>
+        <h1 data-c="hero.h1">Fatto a mano,<br><em>con amore.</em></h1>
+        <p data-c="hero.testo">Piccole creazioni fatte a mano, un punto alla volta. Scegli tra le mie borse o chiedimi qualcosa fatto apposta per te.</p>
+        <div class="bottoni">
+          <a class="btn btn-wa" data-wa href="https://wa.me/393935259533?text=Ciao%20Alessia!%20Ho%20visto%20il%20tuo%20sito%20e%20vorrei%20informazioni" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+            Scrivimi su WhatsApp
+          </a>
+          <a class="btn btn-ig" data-ig href="https://www.instagram.com/crochet_by_alessia_/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <figure><img data-c="hero.foto" src="foto/logo.jpg" alt="Illustrazione di Alessia che lavora all'uncinetto"></figure>
+    </div>
+  </div>
+
+  <section id="lavori">
+    <div class="wrap">
+      <div class="titolo">
+        <small>Le mie creazioni</small>
+        <h2 data-c="lavori.titolo">Ogni pezzo è unico</h2>
+        <p data-c="lavori.testo">Borse, clutch, accessori e oggetti per la casa. Clicca su una categoria per vedere tutti i lavori: sono esempi, li rifaccio per te nei colori che preferisci e molti li trovi ai mercatini.</p>
+      </div>
+      <div class="filtri" role="tablist">
+        <button class="on" data-f="tutte">Tutte</button>
+        <button data-f="borse">Borse</button>
+        <button data-f="pochette">Clutch</button>
+        <button data-f="accessori">Accessori</button>
+        <button data-f="casa">Casa e regali</button>
+      </div>
+      <div class="categorie"></div>
+      <div class="cat-dati" hidden data-c="lavori.categorie"><span data-id="borse-mano" data-riquadro="borse">Borse a mano</span><span data-id="bauletti" data-riquadro="borse">Bauletti</span><span data-id="borse-spalla" data-riquadro="borse">Borse a spalla</span><span data-id="zainetti" data-riquadro="borse">Zainetti</span><span data-id="clutch" data-riquadro="borse">Clutch</span><span data-id="accessori" data-riquadro="accessori">Accessori</span><span data-id="borraccia" data-riquadro="accessori">Porta borraccia</span><span data-id="casa" data-riquadro="casa">Per la casa</span><span data-id="cesti" data-riquadro="casa">Cesti</span><span data-id="bomboniere" data-riquadro="misura">Bomboniere</span></div>
+      <div class="riq-dati" hidden data-c="lavori.riquadri"><span data-id="borse" data-sotto="A mano, a spalla, bauletti, zainetti e clutch" data-copertina="Bauletto" data-richiesta="">Borse</span><span data-id="accessori" data-sotto="Piccoli pezzi e porta borraccia" data-copertina="Portaocchiali" data-richiesta="">Accessori</span><span data-id="casa" data-sotto="Cesti e oggetti per la casa" data-copertina="Cestini a cuore" data-richiesta="">Per la casa</span><span data-id="misura" data-sotto="Bomboniere e regali su richiesta" data-copertina="" data-richiesta="Bomboniere, regali e pezzi su misura: dimmi cosa ti serve, colori e quantità, e lo creo per te.">Su misura</span></div>
+      <div class="lavori" data-c="lavori.lista">
+        <article class="lavoro" data-cat="borse-mano" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/conchiglia-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/conchiglia-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/conchiglia-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/conchiglia-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Conchiglia: vedi 4 foto"><div class="cop"><img src="/foto/modelli/conchiglia-1.jpg" alt="Conchiglia all'uncinetto" loading="lazy"><span class=conta>4 foto</span></div><div><h3>Conchiglia</h3><p>La forma a ventaglio, con manico in bambù o catena.</p></div></article>
+        <article class="lavoro" data-cat="borse-mano" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/borsetta-panna-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-panna-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Borsetta panna: vedi 2 foto"><div class="cop"><img src="/foto/modelli/borsetta-panna-1.jpg" alt="Borsetta panna all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Borsetta panna</h3><p>Da mano, con catena dorata.</p></div></article>
+        <article class="lavoro" data-cat="borse-mano" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/borsetta-morbida-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Borsetta morbida: vedi 1 foto"><div class="cop"><img src="/foto/modelli/borsetta-morbida-2.jpg" alt="Borsetta morbida all'uncinetto" loading="lazy"></div><div><h3>Borsetta morbida</h3><p>Piccola e morbida, da mano.</p></div></article>
+        <article class="lavoro" data-cat="borse-mano" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/bon-ton-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/bon-ton-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Bon ton: vedi 2 foto"><div class="cop"><img src="/foto/modelli/bon-ton-1.jpg" alt="Bon ton all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Bon ton</h3><p>Beige e nero, con catena dorata.</p></div></article>
+        <article class="lavoro" data-cat="bauletti" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-6.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-7.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/borsetta-con-manici-8.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Bauletto: vedi 8 foto"><div class="cop"><img src="/foto/modelli/borsetta-con-manici-1.jpg" alt="Bauletto all'uncinetto" loading="lazy"><span class=conta>8 foto</span></div><div><h3>Bauletto</h3><p>Rigido e capiente, con manici e chiusura. In tanti colori.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/con-frange-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/con-frange-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/con-frange-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Con frange: vedi 3 foto"><div class="cop"><img src="/foto/modelli/con-frange-1.jpg" alt="Con frange all'uncinetto" loading="lazy"><span class=conta>3 foto</span></div><div><h3>Con frange</h3><p>A spalla, con frange e spille.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/traforata-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/traforata-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/traforata-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/traforata-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/traforata-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Traforata: vedi 5 foto"><div class="cop"><img src="/foto/modelli/traforata-1.jpg" alt="Traforata all'uncinetto" loading="lazy"><span class=conta>5 foto</span></div><div><h3>Traforata</h3><p>Leggera, a spalla, con il punto a rete.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/con-chiusura-gioiello-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/con-chiusura-gioiello-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Con chiusura gioiello: vedi 2 foto"><div class="cop"><img src="/foto/modelli/con-chiusura-gioiello-1.jpg" alt="Con chiusura gioiello all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Con chiusura gioiello</h3><p>Con chiusura gioiello e catena.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/con-catena-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/con-catena-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Con catena: vedi 2 foto"><div class="cop"><img src="/foto/modelli/con-catena-1.jpg" alt="Con catena all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Con catena</h3><p>Con la tracolla a catena.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/shopper-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-6.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-7.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-8.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/shopper-9.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Shopper: vedi 9 foto"><div class="cop"><img src="/foto/modelli/shopper-1.jpg" alt="Shopper all'uncinetto" loading="lazy"><span class=conta>9 foto</span></div><div><h3>Shopper</h3><p>Capienti, per tutti i giorni o per il mare.</p></div></article>
+        <article class="lavoro" data-cat="borse-spalla" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/sacchetto-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/sacchetto-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Sacchetto: vedi 2 foto"><div class="cop"><img src="/foto/modelli/sacchetto-1.jpg" alt="Sacchetto all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Sacchetto</h3><p>Con coulisse e fiocco.</p></div></article>
+        <article class="lavoro" data-cat="zainetti" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/zainetto-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/zainetto-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Zainetto: vedi 2 foto"><div class="cop"><img src="/foto/modelli/zainetto-1.jpg" alt="Zainetto all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Zainetto</h3><p>Con chiusura in metallo.</p></div></article>
+        <article class="lavoro" data-cat="clutch" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/bauletto-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/bauletto-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/bauletto-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-6.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-7.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-8.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-9.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/clutch-10.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/bauletto-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Clutch: vedi 14 foto"><div class="cop"><img src="/foto/modelli/bauletto-3.jpg" alt="Clutch all'uncinetto" loading="lazy"><span class=conta>14 foto</span></div><div><h3>Clutch</h3><p>Con chiusura a molla, in tanti filati e colori, con spille e charm a scelta.</p></div></article>
+        <article class="lavoro" data-cat="accessori" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/scrunchie-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/scrunchie-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/scrunchie-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Scrunchie: vedi 3 foto"><div class="cop"><img src="/foto/modelli/scrunchie-1.jpg" alt="Scrunchie all'uncinetto" loading="lazy"><span class=conta>3 foto</span></div><div><h3>Scrunchie</h3><p>Elastici morbidi in tanti colori.</p></div></article>
+        <article class="lavoro" data-cat="accessori" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/fiocchi-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Fiocchi: vedi 1 foto"><div class="cop"><img src="/foto/modelli/fiocchi-1.jpg" alt="Fiocchi all'uncinetto" loading="lazy"></div><div><h3>Fiocchi</h3><p>Da mettere su borse e capelli.</p></div></article>
+        <article class="lavoro" data-cat="accessori" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/portaocchiali-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/portaocchiali-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/portaocchiali-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Portaocchiali: vedi 3 foto"><div class="cop"><img src="/foto/modelli/portaocchiali-1.jpg" alt="Portaocchiali all'uncinetto" loading="lazy"><span class=conta>3 foto</span></div><div><h3>Portaocchiali</h3><p>A forma di gatto e orsetto.</p></div></article>
+        <article class="lavoro" data-cat="borraccia" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/porta-borraccia-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/porta-borraccia-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Porta borraccia: vedi 2 foto"><div class="cop"><img src="/foto/modelli/porta-borraccia-1.jpg" alt="Porta borraccia all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Porta borraccia</h3><p>Con tracolla.</p></div></article>
+        <article class="lavoro" data-cat="casa" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/sottobicchieri-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/sottobicchieri-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Sottobicchieri: vedi 2 foto"><div class="cop"><img src="/foto/modelli/sottobicchieri-1.jpg" alt="Sottobicchieri all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Sottobicchieri</h3><p>Tondi, con il gattino.</p></div></article>
+        <article class="lavoro" data-cat="casa" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/runner-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/runner-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Runner: vedi 2 foto"><div class="cop"><img src="/foto/modelli/runner-1.jpg" alt="Runner all'uncinetto" loading="lazy"><span class=conta>2 foto</span></div><div><h3>Runner</h3><p>Centrotavola con nappine.</p></div></article>
+        <article class="lavoro" data-cat="cesti" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-4.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-5.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-a-cuore-6.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Cestini a cuore: vedi 6 foto"><div class="cop"><img src="/foto/modelli/cestini-a-cuore-1.jpg" alt="Cestini a cuore all'uncinetto" loading="lazy"><span class=conta>6 foto</span></div><div><h3>Cestini a cuore</h3><p>Per la casa o un regalo.</p></div></article>
+        <article class="lavoro" data-cat="cesti" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/cestini-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-2.jpg&quot;,&quot;nota&quot;:&quot;&quot;},{&quot;src&quot;:&quot;/foto/modelli/cestini-3.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Cestini: vedi 3 foto"><div class="cop"><img src="/foto/modelli/cestini-1.jpg" alt="Cestini all'uncinetto" loading="lazy"><span class=conta>3 foto</span></div><div><h3>Cestini</h3><p>Per mettere in ordine con stile.</p></div></article>
+        <article class="lavoro" data-cat="bomboniere" data-foto="[{&quot;src&quot;:&quot;/foto/modelli/bomboniere-1.jpg&quot;,&quot;nota&quot;:&quot;&quot;}]" tabindex="0" role="button" aria-label="Bomboniere: vedi 1 foto"><div class="cop"><img src="/foto/modelli/bomboniere-1.jpg" alt="Bomboniere all'uncinetto" loading="lazy"></div><div><h3>Bomboniere</h3><p>Cuoricini per le tue feste.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="come" id="come">
+    <div class="wrap">
+      <div class="titolo">
+        <small>Su richiesta</small>
+        <h2 data-c="richiesta.titolo">Lo creo apposta per te</h2>
+      </div>
+      <div class="passi" data-c="richiesta.passi">
+        <div class="passo"><h3>Scrivimi</h3><p>Su WhatsApp o Instagram, raccontami cosa ti piacerebbe.</p></div>
+        <div class="passo"><h3>Scegliamo insieme</h3><p>Colori, filato e misure: decidiamo ogni dettaglio.</p></div>
+        <div class="passo"><h3>Lo preparo a mano</h3><p>In circa due settimane, il tempo di prendere il materiale e lavorarlo, è pronto: te lo consegno o te lo spedisco.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chi" id="chi">
+    <div class="wrap">
+      <figure><img data-c="chi.foto" src="foto/logo.jpg" alt="Il logo di crochet by Alessia"></figure>
+      <div>
+        <small>Chi sono</small>
+        <h2 data-c="chi.titolo">Benvenuti nel mio mondo creativo! 🧶</h2>
+        <div data-c="chi.testo">
+        <p>Ciao! Sono Alessia e dietro ogni creazione c'è la mia passione per l'uncinetto e per tutto ciò che nasce dalla fantasia e dalla manualità.</p>
+        <p>Crochet by Alessia è il mio piccolo spazio creativo, dove ogni filo prende forma e si trasforma in qualcosa di unico, realizzato interamente a mano con cura, amore e attenzione ai dettagli.</p>
+        <p>Borse, accessori e piccoli oggetti pensati per aggiungere un tocco di originalità alla quotidianità.</p>
+        <p>Perché ogni creazione handmade è speciale: nessuna è esattamente uguale all'altra, proprio come chi la sceglie.</p>
+        </div>
+        <p class="firma" data-c="chi.firma">Fatto a mano, con passione e un pizzico di creatività! 💕</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="mercatini" id="mercatini">
+    <div class="wrap">
+      <div class="titolo">
+        <small>Dove trovarmi</small>
+        <h2 data-c="mercatini.titolo">Vieni a toccarle con mano</h2>
+        <p data-c="mercatini.testo">Le mie creazioni sono fatte per essere viste da vicino: ecco come averle.</p>
+      </div>
+      <div class="eventi">
+        <h3 data-c="eventi.titolo">Prossimi mercatini</h3>
+        <ul data-c="eventi.lista"><li class="evento"><div class="giorno"><b>8</b>nov</div><div><h3>Fiera Autunnale di Volpiano (20ª edizione)</h3><p>domenica 8 nov</p><p class="luogo">📍 Vie del centro storico, Volpiano (TO)</p><a href="https://www.instagram.com/prolocodivolpiano/" target="_blank" rel="noopener">Più informazioni →</a></div></li></ul>
+      </div>
+      <div class="foto-merc" data-c="mercatini.foto">
+        <img src="foto/mercatini/banco-lago.jpg" alt="Alessia al suo banco in riva al lago" loading="lazy">
+        <img src="foto/mercatini/banco-1.jpg" alt="Il banco di crochet by Alessia a un mercatino" loading="lazy">
+        <img src="foto/mercatini/rosa-gazebo.jpg" alt="Borsa rosa appesa al gazebo del mercatino" loading="lazy">
+        <img src="foto/mercatini/banco-torre.jpg" alt="Alessia al suo banco sotto il gazebo, davanti alla torre" loading="lazy">
+        <img src="foto/mercatini/banco-2.jpg" alt="Borse e accessori sul banco del mercatino" loading="lazy">
+        <img src="foto/mercatini/righe-gazebo.jpg" alt="Borsa a righe al mercatino" loading="lazy">
+      </div>
+      <div class="modi">
+        <div class="modo m-giallo"><span>🎪</span><h3>Ai mercatini</h3><p data-c="mercatini.ai_mercatini">Partecipo ai mercatini a Torino e provincia: passa a trovarmi, guarda e tocca i miei lavori.</p></div>
+        <div class="modo m-rosa"><span>🤝</span><h3>Consegna a mano</h3><p data-c="mercatini.a_mano">Se sei in zona ci organizziamo e te la porto io.</p></div>
+        <div class="modo m-lilla"><span>📦</span><h3>Spedizione</h3><p data-c="mercatini.spedizione">Sei lontano? Te la spedisco a casa, ben impacchettata. Il costo lo valutiamo insieme in base a dove abiti.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="recensioni" id="recensioni" hidden>
+    <div class="wrap">
+      <div class="titolo">
+        <small>Recensioni</small>
+        <h2 data-c="recensioni.titolo">Dicono di me</h2>
+      </div>
+      <ul class="recensioni-lista" data-c="recensioni.lista"><li class="recensione"><blockquote>“No vabbè, ma è stupenda! Sapevo che non mi avresti delusa, tu non deludi mai! È proprio come la desideravo, e poi è dolcissima. Si vede proprio che ci metti passione e amore 💜”</blockquote><p><small>Borsa lilla su richiesta</small></p></li><li class="recensione"><blockquote>“Ho aperto la busta e visto la borsa: bellissima, venuta davvero bene! Sono strasoddisfatto, grazie mille 🫶”</blockquote><p><small>Borsa</small></p></li><li class="recensione"><blockquote>“Sì, è stata un successo! Complimenti anche da parte di mia mamma. Ancora grazie mille 💕”</blockquote><p><small>Borsa regalo</small></p></li><li class="recensione"><blockquote>“A mia sorella è piaciuto tanto lo zaino. Ti ringrazia 😊”</blockquote><p><small>Zainetto</small></p></li><li class="recensione"><blockquote>“Bellissimo… Grazie! 😘”</blockquote><p><small>Cestino</small></p></li><li class="recensione"><blockquote>“A mia mamma è piaciuta tantissimo 😊”</blockquote><p><small>Regalo</small></p></li></ul>
+      <button class="btn lascia-apri" type="button">Lascia una recensione</button>
+    </div>
+  </section>
+
+  <section class="contatti" id="contatti">
+    <div class="wrap">
+      <h2 data-c="contatti.titolo">Ti piace qualcosa?</h2>
+      <p data-c="contatti.testo">Scrivimi, ti rispondo il prima possibile.</p>
+      <div class="bottoni">
+        <a class="btn btn-ig" style="color:var(--bordeaux)" data-c="contatti.whatsapp" href="https://wa.me/393935259533" target="_blank" rel="noopener">WhatsApp · +39 393 525 9533</a>
+      </div>
+      <div class="canali">
+        <a data-c="contatti.instagram" href="https://www.instagram.com/crochet_by_alessia_/" target="_blank" rel="noopener">Instagram @crochet_by_alessia_</a>
+        <a data-c="contatti.tiktok" href="https://www.tiktok.com/@crochet.by.alessia" target="_blank" rel="noopener">TikTok @crochet.by.alessia</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<dialog id="lascia" aria-label="Lascia una recensione">
+  <button class="g-chiudi" type="button" aria-label="Chiudi">✕</button>
+  <form>
+    <h3>Lascia una recensione</h3>
+    <p>Mi fa felicissima sapere cosa ne pensi! La leggo e la pubblico sul sito.</p>
+    <label for="r-testo">Cosa ne pensi?</label>
+    <textarea id="r-testo" name="testo" required minlength="5" maxlength="600" placeholder="Es. La borsa è bellissima, curata in ogni dettaglio!"></textarea>
+    <label for="r-nome">Il tuo nome (facoltativo)</label>
+    <input id="r-nome" name="nome" maxlength="60" autocomplete="given-name" placeholder="Es. Giulia o solo G.">
+    <label for="r-pezzo">Cosa hai preso (facoltativo)</label>
+    <input id="r-pezzo" name="pezzo" maxlength="80" placeholder="Es. Bauletto bordeaux">
+    <div class="esca" aria-hidden="true"><label for="r-sito">Sito</label><input id="r-sito" name="sito" tabindex="-1" autocomplete="off"></div>
+    <button class="btn btn-wa" type="submit">Invia</button>
+    <p class="esito" role="status"></p>
+  </form>
+</dialog>
+
+<dialog id="galleria" aria-label="Foto del modello">
+  <div class="g-modelli" hidden><h3></h3><p class="g-sotto">Scegli un modello per vedere le foto</p><div class="g-tipi"></div><div class="g-scelta"></div><div class="g-misura" hidden><p></p><a class="btn btn-wa" data-wa href="https://wa.me/393935259533?text=Ciao%20Alessia!%20Vorrei%20un%20lavoro%20su%20misura" target="_blank" rel="noopener">Chiedimi un pezzo su misura</a></div></div>
+  <button class="g-indietro" type="button" hidden>‹ Tutti i modelli</button>
+  <button class="g-chiudi" type="button" aria-label="Chiudi">✕</button>
+  <figure>
+    <button class="g-freccia g-prima" type="button" aria-label="Foto precedente">‹</button>
+    <img alt="">
+    <button class="g-freccia g-dopo" type="button" aria-label="Foto successiva">›</button>
+  </figure>
+  <div class="g-testo"><h3></h3><p class="g-nota"></p><span class="g-conta"></span></div>
+  <div class="g-miniature"></div>
+  <a class="btn btn-wa g-chiedi" data-wa href="https://wa.me/393935259533" target="_blank" rel="noopener">Lo voglio anch'io!</a>
+</dialog>
+
+<footer>
+  <p class="motto">Fatto a mano con amore.</p>
+  <p>© 2026 crochet by Alessia · Creazioni a uncinetto</p>
+  <p class="crediti">Sito di <a href="https://lytostudio.com">Lyto Studio</a> · <a href="mailto:hello@lytostudio.com">hello@lytostudio.com</a></p>
+</footer>
+
+<script>
+// filtri della galleria + "mostra tutte" (all'inizio 12 modelli)
+const griglia=document.querySelector('.lavori'),altre=document.createElement('button');
+altre.className='altre';altre.textContent='Mostra tutte le creazioni';
+griglia.classList.add('chiuse');griglia.after(altre);
+altre.onclick=()=>{griglia.classList.remove('chiuse');altre.hidden=true};
+document.querySelectorAll('.filtri button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('.filtri button').forEach(x=>x.classList.toggle('on',x===b));
+  const f=b.dataset.f;
+  griglia.querySelectorAll('.lavoro').forEach(a=>a.classList.toggle('via',f!=='tutte'&&a.dataset.cat!==f));
+  griglia.classList.toggle('chiuse',f==='tutte'&&!altre.hidden);
+});
+
+// clic su un modello: si apre la galleria con tutte le sue foto
+const g=document.getElementById('galleria'),gImg=g.querySelector('figure img'),mini=g.querySelector('.g-miniature');
+let foto=[],at=0,nome='';
+function mostra(i){
+  at=(i+foto.length)%foto.length;
+  const n=foto[at].nome||nome;g.querySelector('.g-testo h3').textContent=n;
+  const wa=g.querySelector('.g-chiedi');wa.href=wa.href.split('?')[0]+'?text='+encodeURIComponent('Ciao Alessia! Ho visto sul sito il modello "'+n+'" e vorrei informazioni');
+  gImg.src=foto[at].src;gImg.alt=n+(foto[at].nota?' – '+foto[at].nota:'');
+  g.querySelector('.g-nota').textContent=foto[at].nota;
+  g.querySelector('.g-conta').textContent=foto.length>1?(at+1)+' di '+foto.length:'';
+  mini.querySelectorAll('button').forEach((b,k)=>b.classList.toggle('on',k===at));
+  mini.children[at]?.scrollIntoView({block:'nearest',inline:'center'});
+}
+function apri(card,tutte){
+  foto=tutte||JSON.parse(card.dataset.foto);nome=tutte?'':card.querySelector('h3').textContent;
+  g.querySelectorAll('.g-freccia').forEach(b=>b.hidden=foto.length<2);
+  mini.hidden=foto.length<2;
+  mini.replaceChildren(...foto.map((f,k)=>{const b=document.createElement('button');b.type='button';b.setAttribute('aria-label','Foto '+(k+1));b.innerHTML='<img alt="" loading="lazy">';b.firstChild.src=f.src;b.onclick=()=>mostra(k);return b;}));
+  g.classList.remove('scelta','solo-foto');g.querySelector('.g-modelli').hidden=true;
+  if(!g.open)g.showModal();g.scrollTop=0;mostra(0);
+}
+griglia.addEventListener('click',e=>{const c=e.target.closest('.lavoro');if(c)apri(c)});
+griglia.addEventListener('keydown',e=>{const c=e.target.closest('.lavoro');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();apri(c)}});
+g.querySelector('.g-prima').onclick=()=>mostra(at-1);
+g.querySelector('.g-dopo').onclick=()=>mostra(at+1);
+g.querySelector('.g-chiudi').onclick=()=>g.close();
+g.addEventListener('click',e=>{if(e.target===g)g.close()});
+g.addEventListener('keydown',e=>{if(e.key==='ArrowLeft')mostra(at-1);if(e.key==='ArrowRight')mostra(at+1)});
+let x0=null;gImg.addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+gImg.addEventListener('touchend',e=>{if(x0===null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40)mostra(at+(d<0?1:-1));x0=null});
+
+// riquadri categoria: le categorie (nome e ordine) arrivano dall'admin, i modelli dalle schede qui sopra
+const categorie=[...document.querySelectorAll('.cat-dati span')].map(k=>({id:k.dataset.id,nome:k.textContent,riquadro:k.dataset.riquadro||''}));
+const modelli=[...griglia.querySelectorAll('.lavoro')].map(a=>({cat:a.dataset.cat,nome:a.querySelector('h3').textContent,testo:a.querySelector('p').textContent,foto:JSON.parse(a.dataset.foto),scheda:a}));
+const sceltaBox=g.querySelector('.g-modelli'),indietro=g.querySelector('.g-indietro'),tipiBox=sceltaBox.querySelector('.g-tipi');
+// i riquadri (nome, descrizione, copertina, box per le richieste) li decide Alessia dall'admin;
+// ogni categoria dice in che riquadro sta, una senza riquadro compare come riquadro a sé
+const riquadri=[...document.querySelectorAll('.riq-dati span')].map(r=>({id:r.dataset.id,nome:r.textContent,sotto:r.dataset.sotto,copertina:r.dataset.copertina,richiesta:r.dataset.richiesta,cat:categorie.filter(k=>k.riquadro===r.dataset.id).map(k=>k.id)}));
+const gruppi=[...riquadri,...categorie.filter(k=>!riquadri.some(r=>r.id===k.riquadro)).map(k=>({nome:k.nome,cat:[k.id]}))];
+const nomeCat=id=>(categorie.find(k=>k.id===id)||{}).nome||'';
+const modelliDi=gr=>categorie.filter(k=>gr.cat.includes(k.id)).flatMap(k=>modelli.filter(m=>m.cat===k.id));
+let aperto=null,tipo='tutti';
+// gruppo con un modello solo: subito le foto (tranne quelli col box per le richieste, es. "Su misura");
+// altrimenti si sceglie il modello, con i filtri se dentro ci sono più categorie
+function apriGruppo(gr,t='tutti'){
+  const suoi=modelliDi(gr);
+  if(suoi.length===1&&!gr.richiesta){aperto=null;indietro.hidden=true;apri(suoi[0].scheda);return}
+  aperto=gr;tipo=t;indietro.hidden=true;
+  sceltaBox.querySelector('h3').textContent=gr.nome;
+  const tipi=[...new Set(suoi.map(m=>m.cat))];
+  tipiBox.hidden=tipi.length<2;
+  tipiBox.replaceChildren(...['tutti',...tipi].map(id=>{
+    const b=document.createElement('button');b.type='button';b.textContent=id==='tutti'?'Tutti':nomeCat(id);
+    b.classList.toggle('on',id===tipo);b.onclick=()=>apriGruppo(gr,id);return b;
+  }));
+  sceltaBox.querySelector('.g-scelta').replaceChildren(...suoi.filter(m=>tipo==='tutti'||m.cat===tipo).map(m=>{
+    const b=document.createElement('button');b.type='button';
+    b.innerHTML='<img alt="" loading="lazy"><b></b><small></small>';
+    b.querySelector('img').src=m.foto[0].src;b.querySelector('b').textContent=m.nome;
+    b.querySelector('small').textContent=(tipi.length>1?nomeCat(m.cat)+' · ':'')+m.foto.length+' foto';
+    b.onclick=()=>{apri(m.scheda);indietro.hidden=false};
+    return b;
+  }));
+  sceltaBox.querySelector('.g-misura').hidden=!gr.richiesta;
+  sceltaBox.querySelector('.g-misura p').textContent=gr.richiesta||'';
+  g.classList.add('scelta');sceltaBox.hidden=false;
+  if(!g.open)g.showModal();
+  g.scrollTop=0;
+}
+indietro.onclick=()=>aperto&&apriGruppo(aperto,tipo);
+g.addEventListener('close',()=>{indietro.hidden=true;aperto=null});
+
+document.querySelector('.categorie').replaceChildren(...gruppi.map(gr=>{
+  const suoi=modelliDi(gr);
+  if(!suoi.length)return null;
+  const b=document.createElement('button');b.type='button';b.className='categoria';
+  b.innerHTML='<img alt="" loading="lazy"><span><b></b><small></small><em></em></span>';
+  // copertina: il modello scelto (per nome), altrimenti il primo del gruppo
+  const cop=suoi.find(m=>m.nome===gr.copertina)||suoi[0];
+  b.querySelector('img').src=cop.foto[0].src;b.querySelector('b').textContent=gr.nome;
+  b.querySelector('small').textContent=suoi.length>1?suoi.length+' modelli':'Su richiesta';
+  b.querySelector('em').textContent=gr.sotto||'';
+  b.setAttribute('aria-label',gr.nome+': vedi i lavori');
+  b.onclick=()=>apriGruppo(gr);
+  return b;
+}).filter(Boolean));
+// foto dei mercatini: la riga scorre da sola; si può anche scorrere a mano (dito, trackpad, trascinando col mouse):
+// mentre ci sei sopra si ferma e riparte da dove l'hai lasciata
+const riga=document.querySelector('.foto-merc'),nastro=document.createElement('div');nastro.className='merc-nastro';
+nastro.append(...riga.children);riga.append(nastro);
+// doppia copia per il giro continuo
+[...nastro.children].forEach(i=>{const c=i.cloneNode();c.alt='';c.setAttribute('aria-hidden','true');nastro.append(c)});
+const VEL=matchMedia('(prefers-reduced-motion: reduce)').matches?40:80; // pixel al secondo
+let pos=0,ultimo=0,fermaFino=0,sopra=false,trascina=null;
+const meta=()=>nastro.scrollWidth/2;
+const pausa=(ms=2500)=>fermaFino=performance.now()+ms;
+function giro(t){
+  const dt=ultimo?Math.min(t-ultimo,100)/1000:0;ultimo=t;
+  if(!sopra&&t>fermaFino&&!trascina){pos+=VEL*dt;if(pos>=meta())pos-=meta();riga.scrollLeft=pos}
+  requestAnimationFrame(giro);
+}
+riga.addEventListener('scroll',()=>{
+  if(Math.abs(riga.scrollLeft-pos)<2)return; // l'ho mosso io
+  let x=riga.scrollLeft;
+  if(x>=meta())x-=meta();if(x<=0)x+=meta();
+  pos=x;if(Math.abs(riga.scrollLeft-x)>1)riga.scrollLeft=x;
+  pausa();
+},{passive:true});
+riga.addEventListener('mouseenter',()=>sopra=true);
+riga.addEventListener('mouseleave',()=>sopra=false);
+riga.addEventListener('touchstart',()=>pausa(4000),{passive:true});
+riga.addEventListener('wheel',()=>pausa(),{passive:true});
+// trascinare col mouse (sul computer)
+riga.addEventListener('pointerdown',e=>{if(e.pointerType==='mouse'&&e.button===0)trascina={x:e.clientX,da:riga.scrollLeft}});
+let mosso=false;
+addEventListener('pointermove',e=>{if(!trascina)return;const dx=e.clientX-trascina.x;if(Math.abs(dx)>5){mosso=true;riga.classList.add('trascino')}riga.scrollLeft=trascina.da-dx;pausa()});
+addEventListener('pointerup',()=>{if(!trascina)return;riga.classList.remove('trascino');trascina=null;setTimeout(()=>mosso=false,0)});
+// clic su una foto (non dopo un trascinamento): si apre grande, con le frecce per vedere le altre
+const fotoMerc=[...nastro.children].slice(0,nastro.children.length/2);
+nastro.addEventListener('click',e=>{
+  const i=e.target.closest('img');if(!i||mosso)return;
+  const k=[...nastro.children].indexOf(i)%fotoMerc.length;
+  apri(null,fotoMerc.map(f=>({src:f.getAttribute('src'),nota:f.alt,nome:'Ai mercatini'})));
+  g.classList.add('solo-foto');mostra(k);
+});
+requestAnimationFrame(giro);
+// recensioni: la sezione si vede sempre (c'è il pulsante per lasciarne una), la lista solo se non è vuota
+document.getElementById('recensioni').hidden=false;
+const listaRec=document.querySelector('.recensioni-lista');listaRec.hidden=!listaRec.children.length;
+// lascia una recensione: va all'admin "da approvare", sul sito compare quando Alessia la pubblica
+const lascia=document.getElementById('lascia'),modulo=lascia.querySelector('form'),esito=lascia.querySelector('.esito');
+document.querySelector('.lascia-apri').onclick=()=>{esito.textContent='';lascia.showModal()};
+lascia.querySelector('.g-chiudi').onclick=()=>lascia.close();
+lascia.addEventListener('click',e=>{if(e.target===lascia)lascia.close()});
+modulo.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const invia=modulo.querySelector('[type=submit]');invia.disabled=true;esito.textContent='Invio…';
+  try{
+    const r=await fetch('/api/recensione',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(Object.fromEntries(new FormData(modulo)))});
+    const d=await r.json().catch(()=>({}));
+    if(!r.ok)throw new Error(d.errore||'');
+    modulo.reset();esito.textContent='Grazie di cuore! 💕 La vedrai sul sito appena l\'avrò letta.';
+  }catch(err){esito.textContent=err.message||'Al momento non riesco a riceverla: scrivimi su WhatsApp!'}
+  invia.disabled=false;
+});
+</script>
+</body>
+</html>
